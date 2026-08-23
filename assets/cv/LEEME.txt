@@ -1,0 +1,7 @@
+Colocá acá tu CV en PDF con el nombre exacto:
+
+CV-Jimena-Estevez.pdf
+
+Todos los botones "Descargar CV" del sitio ya apuntan a ese archivo
+(assets/cv/CV-Jimena-Estevez.pdf), así que una vez que lo agregues acá
+va a funcionar automáticamente, sin tocar el código.

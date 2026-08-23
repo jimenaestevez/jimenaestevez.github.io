@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de diseño multiproducto — Jimena Estévez</title>
+  <meta name="description" content="Case study: sistema de diseño compartido entre 6 squads para acelerar entregas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/Logo-1.svg" alt="Jimena Estévez" />
+      </a>
+      <nav class="nav-links">
+        <a href="about.html" data-text="Sobre mí">Sobre mí</a>
+        <a href="projects.html" data-text="Proyectos" class="active">Proyectos</a>
+        <a href="ai.html" data-text="Trabajando con AI">Trabajando con AI</a>
+        <a href="contact.html" data-text="Contacto">Contacto</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrapper">
+        <div class="breadcrumb"><a href="projects.html">Proyectos</a> / Sistema de diseño multiproducto</div>
+        <span class="eyebrow">Design System · Escalabilidad</span>
+        <h1>Sistema de diseño para equipos multiproducto</h1>
+        <p style="margin-top: 1rem; font-size: 1.1rem;">
+          Cómo construimos un sistema de diseño compartido entre 6 squads distintos para
+          reducir inconsistencias visuales y acelerar el tiempo de entrega.
+        </p>
+
+        <div class="case-meta-grid">
+          <div class="case-meta-item">
+            <h4>Rol</h4>
+            <p>UX Designer líder de sistema</p>
+          </div>
+          <div class="case-meta-item">
+            <h4>Equipo</h4>
+            <p>3 diseñadores, 2 devs front-end</p>
+          </div>
+          <div class="case-meta-item">
+            <h4>Duración</h4>
+            <p>6 meses</p>
+          </div>
+          <div class="case-meta-item">
+            <h4>Año</h4>
+            <p>2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrapper">
+      <div class="case-cover" style="--thumb:#e6d5ec;" aria-hidden="true">
+        Imagen de portada del proyecto (reemplazar)
+      </div>
+    </div>
+
+    <section style="padding-top: 0;">
+      <div class="case-block">
+        <span class="eyebrow">El problema</span>
+        <h2>Seis equipos, seis versiones del mismo botón</h2>
+        <p>
+          Cada squad de producto había resuelto los mismos componentes de interfaz de forma
+          independiente, generando inconsistencias visuales, duplicación de esfuerzo en
+          desarrollo y una experiencia de marca fragmentada entre productos.
+        </p>
+      </div>
+
+      <div class="case-block">
+        <span class="eyebrow">Proceso</span>
+        <h2>Auditoría, priorización y adopción</h2>
+        <p>
+          Empezamos auditando todos los componentes existentes en los 6 productos, agrupándolos
+          por similitud y frecuencia de uso. Priorizamos los componentes de mayor impacto
+          (botones, inputs, cards, navegación) para la primera versión del sistema, y trabajamos
+          en paralelo con el equipo de desarrollo para que cada componente tuviera su
+          contraparte en código desde el día uno.
+        </p>
+        <ul>
+          <li>Auditoría de componentes existentes en 6 productos</li>
+          <li>Definición de tokens de diseño (color, tipografía, espaciado)</li>
+          <li>Documentación de uso y estados en Figma</li>
+          <li>Librería de componentes sincronizada con código (Storybook)</li>
+          <li>Plan de adopción y migración por squad</li>
+        </ul>
+      </div>
+
+      <div class="case-image-row">
+        <div class="case-image">Librería de componentes en Figma</div>
+        <div class="case-image">Documentación de tokens</div>
+      </div>
+
+      <div class="case-block">
+        <span class="eyebrow">Solución</span>
+        <h2>Un lenguaje visual común, con flexibilidad</h2>
+        <p>
+          El sistema final incluyó una librería de más de 40 componentes documentados, tokens
+          de diseño reutilizables y guías de uso claras para que cada squad pudiera adaptar el
+          sistema a sus necesidades sin romper la consistencia general del producto.
+        </p>
+      </div>
+
+      <div class="case-block">
+        <span class="eyebrow">Resultado</span>
+        <h2>Adopción real y menos retrabajo</h2>
+        <ul>
+          <li>5 de 6 squads migrados al sistema en los primeros 4 meses</li>
+          <li>Reducción del 35% en tiempo de diseño de nuevas pantallas</li>
+          <li>Reducción notable de inconsistencias reportadas por QA</li>
+        </ul>
+        <p>
+          Aprendí que un sistema de diseño no se adopta solo, sino que necesita evangelización
+          activa, documentación clara y, sobre todo, involucrar a desarrollo desde el principio
+          para que el sistema sea igual de fácil de usar en código que en Figma.
+        </p>
+      </div>
+    </section>
+
+    <div class="wrapper">
+      <div class="case-nav">
+        <div class="case-nav-link">
+          <span class="eyebrow">Proyecto anterior</span>
+          <a href="proyecto-01.html" class="btn-link">← Checkout mobile</a>
+        </div>
+        <div class="case-nav-link next">
+          <span class="eyebrow">Siguiente proyecto</span>
+          <a href="proyecto-03.html" class="btn-link">Onboarding fintech →</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="wrapper">
+      <div class="wave-divider" aria-hidden="true"></div>
+      <div class="footer-cta-inner">
+        <div>
+          <h2>Hablemos!</h2>
+          <div class="footer-contact-icons">
+            <a href="mailto:jimenaestevez.d@gmail.com" class="footer-icon-btn footer-icon-email" aria-label="Enviar email">
+              <img src="assets/images/email-icon.png" alt="" />
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="footer-icon-btn footer-icon-linkedin" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="white">
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zM8.5 8h3.8v2.06h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/>
+              </svg>
+            </a>
+          </div>
+          <p class="footer-email">jimenaestevez.d@gmail.com</p>
+        </div>
+        <img src="assets/images/Logo.svg" alt="" class="footer-mark" aria-hidden="true" />
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
