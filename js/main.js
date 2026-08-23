@@ -12,6 +12,20 @@ if (navToggle && navLinks) {
   });
 }
 
+// Fotos del hero: click para expandir/contraer (equivalente táctil del hover)
+const heroPhotoGroup = document.querySelector('.hero-photo-group');
+
+if (heroPhotoGroup) {
+  heroPhotoGroup.addEventListener('click', (event) => {
+    heroPhotoGroup.classList.toggle('expanded');
+    event.stopPropagation();
+  });
+
+  document.addEventListener('click', () => {
+    heroPhotoGroup.classList.remove('expanded');
+  });
+}
+
 // Año dinámico en el footer
 document.querySelectorAll('[data-year]').forEach((el) => {
   el.textContent = new Date().getFullYear();
