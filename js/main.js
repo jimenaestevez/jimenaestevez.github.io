@@ -12,10 +12,18 @@ if (navToggle && navLinks) {
   });
 }
 
-// Fotos del hero: click para expandir/contraer (equivalente táctil del hover)
+// Fotos del hero: hover en desktop, click para expandir/contraer en cualquier dispositivo
 const heroPhotoGroup = document.querySelector('.hero-photo-group');
 
 if (heroPhotoGroup) {
+  heroPhotoGroup.addEventListener('mouseenter', () => {
+    heroPhotoGroup.classList.add('expanded');
+  });
+
+  heroPhotoGroup.addEventListener('mouseleave', () => {
+    heroPhotoGroup.classList.remove('expanded');
+  });
+
   heroPhotoGroup.addEventListener('click', (event) => {
     heroPhotoGroup.classList.toggle('expanded');
     event.stopPropagation();

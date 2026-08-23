@@ -13,22 +13,24 @@
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="nav">
-      <a href="index.html" class="nav-logo">
+  <div class="header-wrap">
+    <header class="site-header">
+      <div class="nav">
+        <a href="index.html" class="nav-logo">
         <img src="assets/images/Logo-1.svg" alt="Jimena Estévez" />
       </a>
-      <nav class="nav-links">
+        <button class="nav-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      </div>
+    </header>
+    <nav class="nav-links">
         <a href="about.html" data-text="Sobre mí">Sobre mí</a>
         <a href="projects.html" data-text="Proyectos">Proyectos</a>
         <a href="ai.html" data-text="Trabajando con AI">Trabajando con AI</a>
         <a href="contact.html" data-text="Contacto">Contacto</a>
       </nav>
-      <button class="nav-toggle" aria-label="Abrir menú">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+  </div>
 
   <main>
     <!-- Hero -->
@@ -46,24 +48,34 @@
           </div>
         </div>
 
-        <span class="eyebrow hero-eyebrow">Hola! Soy Jimena</span>
+        <div class="hero-content">
+          <div class="hero-text">
+            <span class="eyebrow hero-eyebrow">Hola! Soy Jimena</span>
 
-        <div class="hero-headline-wrap">
-          <span class="badge-pill badge-1">Analytic thinker</span>
-          <span class="badge-pill badge-2">Agile solver</span>
-          <span class="badge-pill badge-3">Also a ceramist</span>
-          <h1 class="hero-headline">
-            <strong>Product Designer</strong> especializada en crear experiencias altamente <strong>funcionales</strong> y <strong>memorables</strong>
-          </h1>
+            <div class="hero-headline-wrap">
+              <span class="badge-pill badge-1 badge-scatter">Analytic thinker</span>
+              <span class="badge-pill badge-2 badge-scatter">Agile solver</span>
+              <span class="badge-pill badge-3 badge-scatter">Also a ceramist</span>
+              <h1 class="hero-headline">
+                <strong>Product Designer</strong> especializada en crear experiencias altamente <strong>funcionales</strong> y <strong>memorables</strong>
+              </h1>
+            </div>
+
+            <p class="hero-copy">
+              Con un background en graphic design, llevo <strong>+7 años</strong> trabajando en
+              convertir ideas complejas en soluciones funcionables, escalables y memorables. En los
+              últimos 4 años, me he especializado en crear Design systems y en el
+              <strong>uso de AI para eficientizar y agilizar la implementación</strong> de las
+              soluciones.
+            </p>
+          </div>
+
+          <div class="hero-badges">
+            <span class="badge-pill badge-1">Analytic thinker</span>
+            <span class="badge-pill badge-2">Agile solver</span>
+            <span class="badge-pill badge-3">Also a ceramist</span>
+          </div>
         </div>
-
-        <p class="hero-copy">
-          Con un background en graphic design, llevo <strong>+7 años</strong> trabajando en
-          convertir ideas complejas en soluciones funcionables, escalables y memorables. En los
-          últimos 4 años, me he especializado en crear Design systems y en el
-          <strong>uso de AI para eficientizar y agilizar la implementación</strong> de las
-          soluciones.
-        </p>
       </div>
     </section>
 

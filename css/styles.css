@@ -216,6 +216,10 @@ p {
 }
 
 /* ---- Header / Navegación ---- */
+.header-wrap {
+  position: relative;
+}
+
 .site-header {
   position: sticky;
   top: 32px;
@@ -223,6 +227,7 @@ p {
   margin: 32px 72px 0;
   border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
 
@@ -244,6 +249,11 @@ p {
 }
 
 .nav-links {
+  position: absolute;
+  top: 50%;
+  right: 104px;
+  transform: translateY(-50%);
+  z-index: 100;
   display: flex;
   align-items: center;
   gap: var(--space-md);
@@ -293,6 +303,15 @@ p {
   padding-top: 40px;
   padding-bottom: var(--space-lg);
   text-align: center;
+}
+
+.hero-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.hero-badges {
+  display: none;
 }
 
 .hero-actions {
@@ -351,13 +370,11 @@ p {
   z-index: 2;
 }
 
-.hero-photo-group:hover .hero-photo-side.left,
 .hero-photo-group.expanded .hero-photo-side.left {
   opacity: 1;
   transform: translate(-120px, 52px) rotate(-15deg) scale(1);
 }
 
-.hero-photo-group:hover .hero-photo-side.right,
 .hero-photo-group.expanded .hero-photo-side.right {
   opacity: 1;
   transform: translate(120px, 52px) rotate(15deg) scale(1);
@@ -393,7 +410,6 @@ p {
 }
 
 .badge-pill {
-  position: absolute;
   display: inline-block;
   padding: 12px 24px;
   border-radius: 999px;
@@ -406,23 +422,36 @@ p {
 }
 
 .badge-1 {
-  top: -3.5rem;
-  left: -2rem;
   background-color: var(--color-lilac);
-  transform: rotate(-15deg);
 }
 
 .badge-2 {
-  top: 35%;
-  right: -4rem;
   background-color: var(--color-lime);
-  transform: rotate(-15deg);
 }
 
 .badge-3 {
+  background-color: var(--color-peach);
+}
+
+.badge-scatter {
+  position: absolute;
+}
+
+.badge-scatter.badge-1 {
+  top: -3.5rem;
+  left: -2rem;
+  transform: rotate(-15deg);
+}
+
+.badge-scatter.badge-2 {
+  top: 35%;
+  right: -4rem;
+  transform: rotate(-15deg);
+}
+
+.badge-scatter.badge-3 {
   bottom: 2rem;
   left: -5.5rem;
-  background-color: var(--color-peach);
   transform: rotate(15deg);
 }
 
@@ -1033,19 +1062,21 @@ p {
   .nav-links {
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
-    background-color: var(--color-bg);
+    left: 16px;
+    right: 16px;
     flex-direction: column;
     align-items: flex-start;
     padding: var(--space-md);
     gap: var(--space-sm);
-    border-bottom: 1px solid var(--color-line);
-    transform: translateY(-150%);
-    transition: transform 0.25s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
   }
 
   .nav-links.open {
+    opacity: 1;
+    visibility: visible;
     transform: translateY(0);
   }
 
@@ -1089,43 +1120,67 @@ p {
 
   .site-header {
     margin: 16px;
+    top: 16px;
   }
 
   .nav-links {
     top: calc(100% + 12px);
     background-color: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     border-radius: 16px;
-    border-bottom: none;
   }
 
-  .badge-pill {
+  .hero {
+    text-align: left;
+  }
+
+  .hero-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    max-width: none;
+  }
+
+  .hero-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .hero-eyebrow,
+  .hero-headline-wrap,
+  .hero-copy {
+    text-align: left;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .badge-scatter {
+    display: none;
+  }
+
+  .hero-badges {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    flex-shrink: 0;
+    padding-top: 0.5rem;
+  }
+
+  .hero-badges .badge-pill {
     font-size: 0.78rem;
     padding: 10px 20px;
   }
 
-  .badge-1 {
-    top: -4.5rem;
-    left: 0;
-    right: auto;
-    bottom: auto;
-    transform: rotate(-18deg);
+  .toolkit-item {
+    text-align: left;
   }
 
-  .badge-2 {
-    top: -4.5rem;
-    right: 0;
-    left: auto;
-    bottom: auto;
-    transform: rotate(18deg);
-  }
-
-  .badge-3 {
-    top: -0.5rem;
-    left: -4rem;
-    right: auto;
-    bottom: auto;
-    transform: rotate(15deg);
+  .toolkit-item p {
+    margin: 0.5rem 0 0;
   }
 
   .footer-cta-inner {
@@ -1147,47 +1202,23 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .wrapper {
+    padding: 0 16px;
+  }
+
   .toolkit-grid {
     grid-template-columns: 1fr;
-    margin-left: calc(-1 * var(--space-md));
-    margin-right: calc(-1 * var(--space-md));
+    margin-left: -16px;
+    margin-right: -16px;
   }
 
   .toolkit-item {
-    padding: 0 var(--space-md);
-  }
-
-  .hero-headline-wrap {
-    padding: 0 1.5rem;
+    padding: 0 16px;
   }
 
   .badge-pill {
     font-size: 0.6rem;
     padding: 6px 14px;
-  }
-
-  .badge-1 {
-    top: -6rem;
-    left: 2rem;
-    right: auto;
-    bottom: auto;
-    transform: rotate(-20deg);
-  }
-
-  .badge-2 {
-    top: -6rem;
-    right: 2rem;
-    left: auto;
-    bottom: auto;
-    transform: rotate(20deg);
-  }
-
-  .badge-3 {
-    top: -1rem;
-    left: -2rem;
-    right: auto;
-    bottom: auto;
-    transform: rotate(15deg);
   }
 
   .case-nav {
