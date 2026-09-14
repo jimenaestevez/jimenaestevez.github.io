@@ -26,7 +26,7 @@
     </header>
     <nav class="nav-links">
         <a href="about.html" data-text="Sobre mí">Sobre mí</a>
-        <a href="projects.html" data-text="Proyectos">Proyectos</a>
+        <a href="#proyectos" data-text="Proyectos">Proyectos</a>
         <a href="ai.html" data-text="Trabajando con AI">Trabajando con AI</a>
         <a href="contact.html" data-text="Contacto">Contacto</a>
       </nav>
@@ -80,45 +80,43 @@
     </section>
 
     <!-- Proyectos -->
-    <section class="section-projects">
+    <section class="section-projects" id="proyectos">
       <div class="wrapper">
         <h2>Proyectos</h2>
         <p class="section-subtitle">Ahí van algunos de mis proyectos favoritos más recientes</p>
 
         <div class="featured-project-list">
-          <article class="featured-project-card" style="--panel:#e6d5ec;">
+          <a href="proyecto-01.html" class="featured-project-card" style="--panel:#e6d5ec; --panel-hover:#dac5de;">
             <div class="featured-project-info">
-              <span class="badge-outline">E-commerce</span>
-              <h3>Rediseño del flujo de checkout mobile</h3>
-              <p>Reducción de abandono de carrito mediante research cualitativo y testing iterativo en Mercado Libre.</p>
-              <a href="proyecto-01.html" class="btn-link">Leer proyecto</a>
+              <span class="badge-outline">Design System</span>
+              <h3>El sistema de diseño satélite de Mercado Pago</h3>
+              <p>Liderando la creación de un sistema de diseño propio en 3 meses, para salir 4 meses antes que el sistema oficial de Mercado Libre.</p>
+              <span class="btn-link">Leer proyecto</span>
             </div>
-            <div class="featured-project-media"></div>
-          </article>
+            <div class="featured-project-media">
+              <img src="assets/images/proyecto-01-cover.jpg" alt="Pantallas de la app de Mercado Pago rediseñadas con el nuevo sistema de diseño" />
+            </div>
+          </a>
 
-          <article class="featured-project-card" style="--panel:#f9dec6;">
+          <a href="proyecto-02.html" class="featured-project-card" style="--panel:#f9dec6; --panel-hover:#f7d4b9;">
             <div class="featured-project-info">
               <span class="badge-outline">Design System</span>
               <h3>Sistema de diseño para equipos multiproducto</h3>
               <p>Componentes y lineamientos compartidos entre 6 squads para acelerar entregas.</p>
-              <a href="proyecto-02.html" class="btn-link">Leer proyecto</a>
+              <span class="btn-link">Leer proyecto</span>
             </div>
             <div class="featured-project-media"></div>
-          </article>
+          </a>
 
-          <article class="featured-project-card" style="--panel:#e5e9b1;">
+          <a href="proyecto-03.html" class="featured-project-card" style="--panel:#e5e9b1; --panel-hover:#cbd095;">
             <div class="featured-project-info">
               <span class="badge-outline">Fintech</span>
               <h3>Onboarding de app fintech desde cero</h3>
               <p>De cero a MVP: investigación, arquitectura de información y prototipado.</p>
-              <a href="proyecto-03.html" class="btn-link">Leer proyecto</a>
+              <span class="btn-link">Leer proyecto</span>
             </div>
             <div class="featured-project-media"></div>
-          </article>
-        </div>
-
-        <div class="btn-center">
-          <a href="projects.html" class="btn btn-accent">Explorar más</a>
+          </a>
         </div>
       </div>
     </section>

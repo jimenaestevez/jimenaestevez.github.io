@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rediseño de checkout mobile — Jimena Estévez</title>
-  <meta name="description" content="Case study: rediseño del flujo de checkout mobile para reducir el abandono de carrito." />
+  <title>Sistema de diseño de Mercado Pago — Jimena Estévez</title>
+  <meta name="description" content="Case study: cómo construimos el sistema de diseño de Mercado Pago en 3 meses, antes de que existiera el sistema oficial de Mercado Libre." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -26,7 +26,7 @@
     </header>
     <nav class="nav-links">
         <a href="about.html" data-text="Sobre mí">Sobre mí</a>
-        <a href="projects.html" data-text="Proyectos" class="active">Proyectos</a>
+        <a href="index.html#proyectos" data-text="Proyectos" class="active">Proyectos</a>
         <a href="ai.html" data-text="Trabajando con AI">Trabajando con AI</a>
         <a href="contact.html" data-text="Contacto">Contacto</a>
       </nav>
@@ -35,104 +35,198 @@
   <main>
     <section class="case-hero">
       <div class="wrapper">
-        <div class="breadcrumb"><a href="projects.html">Proyectos</a> / Rediseño de checkout mobile</div>
-        <span class="eyebrow">E-commerce · Research · UX/UI</span>
-        <h1>Rediseño del flujo de checkout mobile</h1>
-        <p style="margin-top: 1rem; font-size: 1.1rem;">
-          Cómo un rediseño basado en research redujo la fricción y el abandono de carrito
-          en el flujo de pago mobile de un marketplace de gran escala.
-        </p>
+        <div class="case-hero-grid">
+          <div class="case-hero-text">
+            <span class="eyebrow">Design Systems · Fintech · 0 a 1</span>
+            <div class="case-hero-title-block">
+              <h1>Cómo construimos el <strong>sistema de diseño</strong> de Mercado Pago <strong>antes de que existiera el oficial</strong></h1>
+              <p style="margin-top: 1rem; font-size: 1.1rem;">
+                Liderando durante <strong>dos quarters</strong> la creación de una librería de
+                componentes propia, para que Mercado Pago pudiera salir a producción con su rediseño
+                <strong>semanas antes</strong> de que Andes, el sistema de diseño oficial de Mercado
+                Libre, lanzara su nueva versión.
+              </p>
+            </div>
+          </div>
 
-        <div class="case-meta-grid">
-          <div class="case-meta-item">
-            <h4>Rol</h4>
-            <p>Senior UX Designer</p>
-          </div>
-          <div class="case-meta-item">
-            <h4>Equipo</h4>
-            <p>2 diseñadoras, 1 researcher, 5 ingenieros</p>
-          </div>
-          <div class="case-meta-item">
-            <h4>Duración</h4>
-            <p>4 meses</p>
-          </div>
-          <div class="case-meta-item">
-            <h4>Año</h4>
-            <p>2025</p>
+          <div class="case-hero-meta-card">
+            <div class="case-meta-item">
+              <h4>Rol</h4>
+              <p>UX Designer</p>
+            </div>
+            <div class="case-meta-item">
+              <h4>Equipo</h4>
+              <p>1 Senior Expert, 2 UX Designers, equipo IT</p>
+            </div>
+            <div class="case-meta-item">
+              <h4>Duración</h4>
+              <p>1 año</p>
+            </div>
+            <div class="case-meta-item">
+              <h4>Año</h4>
+              <p>2025</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <div class="wrapper">
-      <div class="case-cover" style="--thumb:#f9dec6;" aria-hidden="true">
-        Imagen de portada del proyecto (reemplazar)
+      <div class="case-cover" style="--thumb:#f9dec6;">
+        <img src="assets/images/proyecto-01-cover.jpg" alt="Pantallas de la app de Mercado Pago rediseñadas con el nuevo sistema de diseño" />
       </div>
     </div>
 
     <section style="padding-top: 0;">
       <div class="case-block">
         <span class="eyebrow">El problema</span>
-        <h2>Un checkout con demasiada fricción</h2>
+        <h2>Un sistema de diseño que todavía no existía</h2>
         <p>
-          El equipo de producto identificó una tasa de abandono elevada en el paso final de
-          compra en mobile, muy por encima del promedio del resto del funnel. La hipótesis
-          inicial apuntaba a un problema de performance, pero el research reveló que el
-          problema principal era de claridad y confianza en la interfaz.
+          Mercado Libre estaba preparando una nueva versión de Andes, su sistema de diseño
+          global, con lanzamiento previsto para agosto de 2025. Mercado Pago iba a ser la
+          primera de las tres unidades de negocio (Mercado Libre, Mercado Pago y Shipping) en
+          salir a producción con su rediseño — pero necesitaba hacerlo <strong>antes</strong> de
+          que esa nueva versión estuviera lista.
+        </p>
+        <p>
+          Y no se trataba de un simple lavado de cara visual. La nueva app traía una experiencia
+          actualizada, pensada desde el <strong>craft</strong> y con foco en una experiencia
+          mucho más <strong>personalizada</strong> para cada usuario. El sistema de diseño tenía
+          que estar a la altura de esas ambiciones — no solo verse distinto, sino sostener
+          funcionalmente todo lo nuevo.
+        </p>
+        <p>
+          No había sistema de diseño que usar todavía. Había que crear uno propio, capaz de
+          sostener el rediseño de los flujos más críticos de la app, sabiendo desde el día uno
+          que en algún momento tendría que convivir con el sistema oficial que se estaba
+          construyendo en paralelo.
         </p>
       </div>
 
       <div class="case-block">
         <span class="eyebrow">Proceso</span>
-        <h2>De la investigación al prototipo</h2>
+        <h2>Construir la librería mientras se construían las pantallas</h2>
         <p>
-          Empezamos con un análisis heurístico del flujo actual y un review de analytics para
-          identificar los pasos exactos donde se perdían usuarios. Después realizamos 12
-          entrevistas con usuarias y usuarios que habían abandonado el checkout en los últimos
-          30 días, complementadas con sesiones de usability testing sobre el flujo existente.
+          En <strong>febrero de 2025</strong> se armó un equipo dedicado — un Senior Design
+          Expert liderando, dos UX Designers (yo entre ellas), y un equipo de IT trabajando en
+          paralelo en las tres plataformas: web, Android e iOS.
         </p>
+        <p>
+          Partí de definiciones visuales de alto nivel bajadas por liderazgo (tipografía,
+          tokens, estilos base) y empecé por los componentes fundacionales. De ahí en más, el
+          proceso fue iterativo: los equipos de delivery de cada flujo me traían sus
+          necesidades, y cada solicitud era analizada para determinar si cumplía con los
+          criterios para convertirse en una solución cross. Aquellas necesidades que sí cumplían
+          con esa visión, eran componetizadas -siempre cumpliendo con los criterios de calidad
+          de la librería y con una visión agnóstica que permitiera que el componente fuera
+          reutilizado en contextos variados cross app.
+        </p>
+        <p>
+          En paralelo, IT codeaba y publicaba cada componente en los repositorios de las tres
+          plataformas para que los equipos pudieran empezar a desarrollar sin esperar.
+        </p>
+        <p>
+          Al mismo tiempo que hacíamos crecer la librería según las necesidades que nos traían
+          los equipos de delivery, yo sostenía una conversación y alineación constante con el
+          equipo de Andes. Nuestro equipo tuvo un papel clave de <strong>cocreación</strong> del
+          sistema de diseño general final junto a ellos: lideré esas conversaciones, negociando
+          por un lado con los equipos de delivery, y por el otro con la lideranza de Andes.
+        </p>
+        <p>Durante esta fase:</p>
         <ul>
-          <li>Auditoría heurística y análisis de funnel</li>
-          <li>12 entrevistas a usuarios con abandono reciente</li>
-          <li>Testing de usabilidad moderado (flujo actual)</li>
-          <li>3 rondas de wireframes e iteración</li>
-          <li>Test A/B del flujo final contra el flujo de control</li>
+          <li><strong>Creé y disponibilicé más de 25 componentes</strong> y definiciones de uso, listos para ser consumidos por los equipos de delivery.</li>
+          <li>Participé en la <strong>cocreación del nuevo sistema de diseño</strong> junto al equipo de Andes. Nuestro <strong>contacto directo</strong> con los equipos de delivery y producción que ya estaban diseñando flujos nos permitió aportar una visión más bajada a la realidad y con consciencia de los problemas y las necesidades reales de los equipos.</li>
+          <li><strong>Lideré múltiples conversaciones</strong> con equipos de delivery con el objetivo de asegurar el correcto uso y aplicación del nuevo sistema.</li>
         </ul>
       </div>
 
       <div class="case-image-row">
-        <div class="case-image">Wireframes de baja fidelidad</div>
-        <div class="case-image">Flujo final en Figma</div>
+        <div class="case-image">Librería de componentes en Figma</div>
+        <div class="case-image">Componentes en producción, multiplataforma</div>
       </div>
 
       <div class="case-block">
         <span class="eyebrow">Solución</span>
-        <h2>Un flujo más corto y más transparente</h2>
+        <h2>De librería de emergencia a sistema satélite permanente</h2>
         <p>
-          Simplificamos el checkout de 5 a 3 pasos, agrupamos la información de costos y envío
-          en un resumen persistente, y agregamos indicadores de progreso claros. También
-          rediseñamos los estados de error para que fueran específicos y accionables en lugar
-          de mensajes genéricos.
+          En <strong>tiempo récord</strong>, a inicios de agosto de 2025 salió a producción el
+          rediseño de Mercado Pago con los flujos prioritarios corriendo sobre el nuevo sistema
+          — <strong>semanas antes</strong> de que Andes lanzara su nueva versión, a fines de ese
+          mismo mes.
+        </p>
+        <p>
+          Cuando Andes lanzó su nueva versión, nuestra librería no desapareció: se dividió. Los
+          componentes con alcance cross —los que también servían a otras unidades de negocio—
+          pasaron a vivir dentro de Andes. Los que tenían un alcance específico para la BU de
+          Fintech se quedaron en nuestra librería, que hoy sigue viva como sistema satélite:
+          convive con Andes, lo complementa, y define sus propias guías de uso y buenas
+          prácticas para todo lo específico de Mercado Pago.
+        </p>
+        <p>
+          Hoy soy parte del <strong>ownership</strong> de esa librería satélite. Concretamente:
+        </p>
+        <ul>
+          <li><strong>Lidero el mantenimiento de la librería</strong>, manteniendo siempre actualizados los componentes existentes e incorporando nuevos.</li>
+          <li>Soy <strong>owner de la librería de iconografía</strong>: velo por la consistencia de todo el sistema iconográfico de Mercado Pago, cuido que se respete la correcta construcción de los íconos, y me encargo de sumar nuevos íconos y disponibilizarlos tanto en Figma como en desarrollo.</li>
+          <li>Soy <strong>referente en la correcta implementación del sistema y sus pilares estratégicos</strong>. Desde el equipo bajamos definiciones y damos feedback constante a los equipos de delivery sobre el uso y la aplicación de componentes y guidelines. Hoy contamos con un canal de ayuda en Slack que ya reúne a más de 1.000 miembros activos.</li>
+          <li>Soy <strong>owner de la plataforma de documentación</strong> de la librería: creé un site que reúne toda la documentación del sistema y la disponibiliza para que los equipos puedan consultarla en cualquier momento.</li>
+        </ul>
+        <p>
+          Este proyecto también trajo una nueva forma de trabajar puertas adentro de Mercado
+          Libre: fuimos <strong>referencia en agilidad</strong> dentro de la compañía.
+          Demostramos que un equipo chico, cuando cuenta con personas con capacidad de
+          liderazgo y ownership, puede sacar adelante un proyecto extremadamente ambicioso en
+          tiempo récord — y que salirse de la burocracia habitual de los procesos internos a
+          veces permite avanzar en timings inusuales sin perder nunca la calidad de lo
+          entregado.
+        </p>
+      </div>
+
+      <div class="case-block">
+        <span class="eyebrow">UXer as builder</span>
+        <h2>Del Figma al código: mi ownership hoy también incluye desarrollo</h2>
+        <p>
+          Una parte central de mi trabajo diario es apoyarme en herramientas de IA (Claude
+          Code, Codex) para ir más allá de las definiciones en Figma. Para los componentes
+          nuevos, mi equipo y yo no solo diseñamos la solución: <strong>escribimos el
+          código</strong> para las tres plataformas y abrimos los PRs correspondientes — IT los
+          revisa y valida. Eso libera tiempo del equipo de desarrollo para enfocarse en tareas
+          de mayor impacto.
+        </p>
+        <p>
+          Mi ownership de la librería ya no se queda únicamente en las definiciones de Figma.
+          Hoy, <strong>entender y dominar conceptos de código</strong> es clave para poder
+          entregar proyectos end-to-end y en tiempos muy reducidos — desde escribir componentes
+          hasta automatizar tareas repetitivas, prototipar más rápido, y crear skills
+          personalizadas de IA para el equipo. También me apoyo en IA para mantener y hacer
+          crecer la plataforma de documentación.
         </p>
       </div>
 
       <div class="case-block">
         <span class="eyebrow">Resultado</span>
-        <h2>Impacto medible en producción</h2>
-        <p>
-          El nuevo flujo se lanzó de forma gradual mediante A/B testing. Los resultados
-          principales tras 6 semanas en producción:
-        </p>
-        <ul>
-          <li>Reducción del 18% en abandono del checkout</li>
-          <li>Aumento del 9% en conversión mobile</li>
-          <li>Reducción del 24% en tickets de soporte relacionados a pagos</li>
-        </ul>
-        <p>
-          Este proyecto reforzó la importancia de validar hipótesis con research antes de
-          diseñar soluciones, y de medir el impacto real más allá de la percepción interna
-          del equipo.
-        </p>
+        <h2>Impacto medible, dentro y fuera del equipo</h2>
+        <p>Los resultados fueron contundentes:</p>
+      </div>
+
+      <div class="case-results-grid">
+        <div class="case-result-card" style="--panel:#e5e9b1;">
+          <p class="case-stat">76%</p>
+          <p class="case-stat-caption">de nuestros usuarios en Brasil <strong>prefieren la nueva experiencia</strong></p>
+        </div>
+        <div class="case-result-card" style="--panel:#e6d5ec;">
+          <p class="case-stat">95%</p>
+          <p class="case-stat-caption">de la experiencia de la app <strong>reescrita para Q4'25</strong></p>
+        </div>
+        <div class="case-result-card" style="--panel:#f9dec6;">
+          <p class="case-stat-caption">Logramos lanzar un <strong>primer release</strong> de restyling en solo</p>
+          <p class="case-stat">2 Q's</p>
+        </div>
+        <div class="case-result-card" style="--panel:#e6ddd9;">
+          <p class="case-stat-caption tight">sentamos las</p>
+          <p class="case-stat">bases</p>
+          <p class="case-stat-caption">para la <strong>creación de nuevas librerías satélites</strong></p>
+        </div>
       </div>
     </section>
 
@@ -144,7 +238,7 @@
         </div>
         <div class="case-nav-link next">
           <span class="eyebrow">Siguiente proyecto</span>
-          <a href="proyecto-02.html" class="btn-link">Sistema de diseño →</a>
+          <a href="proyecto-02.html" class="btn-link">Sistema de diseño multiproducto →</a>
         </div>
       </div>
     </div>
